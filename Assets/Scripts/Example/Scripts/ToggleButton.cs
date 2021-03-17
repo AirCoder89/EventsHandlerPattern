@@ -78,15 +78,5 @@ namespace Example.Scripts
             label.color = icon.color = unselectedColor.label;
             _eventsManager.InvokeEvent(ToggleBtnEvents.OnUnselect, targetControl);
         }
-        
-        //- Non Generic methods
-        public void AddEventListener(ToggleBtnEvents inEvent, EventSystem.EventHandler inHandler)
-            => _eventsManager?.AddEventListener(inEvent, inHandler);
-
-        public  void RemoveEventListener(ToggleBtnEvents inEvent, EventSystem.EventHandler inHandler)
-            => _eventsManager?.RemoveEventListener(inEvent, inHandler);
-        
-        public  void RemoveEventListener(ToggleBtnEvents inEvent)
-            =>  _eventsManager?.RemoveEventListener(inEvent);
     }
 }

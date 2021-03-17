@@ -13,7 +13,7 @@ namespace Example.Scripts.Inputs
         {
             var move = Input.GetAxis("Horizontal");
             if(move > 0f || move < 0f) eManager.InvokeEvent(HumanoidInputEvents.OnMove, move);
-            
+          
             if(Input.GetKeyDown(KeyCode.Space)) eManager.InvokeEvent(HumanoidInputEvents.OnJump);
             if(Input.GetKeyDown(KeyCode.N)) eManager.InvokeEvent(HumanoidInputEvents.OnAttack);
         }
